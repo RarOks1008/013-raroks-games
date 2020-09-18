@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>RG - Nine Men's Morris</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/mica.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/messages.css"/>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    		<meta name="keywords" content="games, nine, men, morris"/>
+    		<meta name="description" content="Small online javascript game Nine men's morris."/>
+    		<meta name="author" content="Nikola Nedeljkovic"/>
+    		<meta name="copyright" content="RarOks 1008 Entertainment @ 2020"/>
+    		<meta name="abstract" content="RarOks JavaScript Games"/>
+    		<meta name="robots" content="index,follow"/>
+    		<link rel="shortcut icon" href="../favicon.ico"/>
+    </head>
+    <body>
+        <div class="mica_board_holder">
+            <ul class="mica_board">
+                <div class="mica_board_row">
+                    <li data-piece="1"></li>
+                    <li data-piece="2"></li>
+                    <li data-piece="3"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_second">
+                    <li data-piece="4"></li>
+                    <li data-piece="5"></li>
+                    <li data-piece="6"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_third">
+                    <li data-piece="7"></li>
+                    <li data-piece="8"></li>
+                    <li data-piece="9"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_forth">
+                    <li data-piece="10"></li>
+                    <li data-piece="11"></li>
+                    <li data-piece="12"></li>
+                    <li class="not_show"></li>
+                    <li data-piece="13"></li>
+                    <li data-piece="14"></li>
+                    <li data-piece="15"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_fifth">
+                    <li data-piece="16"></li>
+                    <li data-piece="17"></li>
+                    <li data-piece="18"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_second">
+                    <li data-piece="19"></li>
+                    <li data-piece="20"></li>
+                    <li data-piece="21"></li>
+                </div>
+                <div class="mica_board_row mica_board_row_last">
+                    <li data-piece="22"></li>
+                    <li data-piece="23"></li>
+                    <li data-piece="24"></li>
+                </div>
+            </ul>
+        </div>
+        <div class="play_info">
+            <p class="player_info"></p>
+            <p class="toplay_info"></p>
+        </div>
+        <div class="play_message"></div>
+        <div class="victory_screen">
+            <p class="congratulation_text"></p>
+            <p class="play_again">Play again?</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/mica.html">Rematch</a></li>
+            </ul>
+        </div>
+        <button type="button" class="rules_button">?</button>
+        <div class="rules_holder">
+            <span class="close_rules">x</span>
+            <p class="rules_title">Phase 1: Placing pieces</p>
+            <p class="rules_text">The game begins with an empty board. Players take turns placing their men one per play on empty points. If a player is able to place three of their pieces on contiguous points in a straight line, vertically or horizontally, they have formed a mill and may remove one of their opponent's pieces from the board and the game, with the caveat that a piece in an opponent's mill can only be removed if no other pieces are available. After all men have been placed, phase two begins.</p>
+            <p class="rules_title">Phase 2: Moving pieces</p>
+            <p class="rules_text">Players continue to alternate moves, this time moving a man to an adjacent point. A piece may not "jump" another piece. Players continue to try to form mills and remove their opponent's pieces as in phase one. A player can "break" a mill by moving one of his pieces out of an existing mill, then moving it back to form the same mill a second time (or any number of times), each time removing one of his opponent's men. When one player has been reduced to three men, phase three begins.</p>
+            <p class="rules_title">Phase 3: "Flying"</p>
+            <p class="rules_text">When a player is reduced to three pieces, there is no longer a limitation on that player of moving to only adjacent points: The player's men may "fly" from any point to any vacant point.</p>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/mica.js"></script>
+        <script src="../assets/js/messages.js"></script>
+    </body>
+</html>

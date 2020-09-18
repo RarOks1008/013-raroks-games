@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url('../images/white-background.jpg');
+    background-size: contain;
+}
+.mica_board_holder {
+    height: 96vh;
+    width: 96vh;
+    margin: 1vh auto;
+    padding: 1vh;
+    border: 1vh solid #675041;
+    border-image: url('../images/frame.png') 10 round;
+}
+.mica_board {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/grid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    list-style-type: none;
+}
+.mica_board_row {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.mica_board_row_second {
+    margin-left: 2.5%;
+    margin-top: 4.5vh;
+    width: 95%;
+    justify-content: space-around;
+}
+.mica_board_row_third {
+    margin-left: 26.5%;
+    margin-top: 5.4vh;
+    width: 47%;
+    justify-content: space-around;
+}
+.mica_board_row_forth {
+    margin-top: 3.6vh;
+    justify-content: space-between;
+}
+.mica_board_row_fifth {
+    margin-left: 26.5%;
+    margin-top: 5vh;
+    width: 47%;
+    justify-content: space-around;
+}
+.mica_board_row_last {
+    margin-top: 5.1vh;
+    height: auto;
+}
+.mica_board .mica_board_row li {
+    width: 4.4vh;
+    height: 4.4vh;
+    border-radius: 50%;
+    background-color: #000000;
+    cursor: pointer;
+}
+.mica_board .mica_board_row li.not_show {
+    opacity: 0;
+    cursor: default;
+}
+.mica_board .mica_board_row li.player1 {
+    background-image: radial-gradient(circle, #0000ff, #ffffff, #0000ff);
+    background-color: #0000ff;
+}
+.mica_board .mica_board_row li.player2 {
+    background-image: radial-gradient(circle, #ff0000, #ffffff, #ff0000);
+    background-color: #ff0000;
+}
+.play_info {
+    top: calc(50% - 12vh);
+    left: calc(50% - 11vh);
+    width: 22vh;
+    height: 22vh;
+    padding: 1vh;
+}

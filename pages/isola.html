@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>RG - Isolation</title>
+        <link rel="stylesheet" type="text/css" href="../assets/css/isola.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/messages.css"/>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    		<meta name="keywords" content="games, isola, isolation, javascript"/>
+    		<meta name="description" content="Small online javascript game Isolation."/>
+    		<meta name="author" content="Nikola Nedeljkovic"/>
+    		<meta name="copyright" content="RarOks 1008 Entertainment @ 2020"/>
+    		<meta name="abstract" content="RarOks JavaScript Games"/>
+    		<meta name="robots" content="index,follow"/>
+    		<link rel="shortcut icon" href="../favicon.ico"/>
+    </head>
+    <body>
+        <div class="isola_board_holder">
+            <table class="isola_board">
+                <tr>
+                    <td data-piece="1"><div></div></td>
+                    <td data-piece="2"><div></div></td>
+                    <td data-piece="3"><div></div></td>
+                    <td data-piece="4" class="standing player1"><div></div></td>
+                    <td data-piece="5"><div></div></td>
+                    <td data-piece="6"><div></div></td>
+                    <td data-piece="7"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="8"><div></div></td>
+                    <td data-piece="9"><div></div></td>
+                    <td data-piece="10"><div></div></td>
+                    <td data-piece="11"><div></div></td>
+                    <td data-piece="12"><div></div></td>
+                    <td data-piece="13"><div></div></td>
+                    <td data-piece="14"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="15"><div></div></td>
+                    <td data-piece="16"><div></div></td>
+                    <td data-piece="17"><div></div></td>
+                    <td data-piece="18"><div></div></td>
+                    <td data-piece="19"><div></div></td>
+                    <td data-piece="20"><div></div></td>
+                    <td data-piece="21"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="22"><div></div></td>
+                    <td data-piece="23"><div></div></td>
+                    <td data-piece="24"><div></div></td>
+                    <td data-piece="25"><div></div></td>
+                    <td data-piece="26"><div></div></td>
+                    <td data-piece="27"><div></div></td>
+                    <td data-piece="28"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="29"><div></div></td>
+                    <td data-piece="30"><div></div></td>
+                    <td data-piece="31"><div></div></td>
+                    <td data-piece="32"><div></div></td>
+                    <td data-piece="33"><div></div></td>
+                    <td data-piece="34"><div></div></td>
+                    <td data-piece="35"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="36"><div></div></td>
+                    <td data-piece="37"><div></div></td>
+                    <td data-piece="38"><div></div></td>
+                    <td data-piece="39"><div></div></td>
+                    <td data-piece="40"><div></div></td>
+                    <td data-piece="41"><div></div></td>
+                    <td data-piece="42"><div></div></td>
+                </tr>
+                <tr>
+                    <td data-piece="43"><div></div></td>
+                    <td data-piece="44"><div></div></td>
+                    <td data-piece="45"><div></div></td>
+                    <td data-piece="46" class="standing player2"><div></div></td>
+                    <td data-piece="47"><div></div></td>
+                    <td data-piece="48"><div></div></td>
+                    <td data-piece="49"><div></div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="play_info">
+            <p class="player_info"></p>
+            <p class="toplay_info"></p>
+        </div>
+        <div class="play_message"></div>
+        <div class="victory_screen">
+            <p class="congratulation_text"></p>
+            <p class="play_again">Play again?</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/isola.html">Rematch</a></li>
+            </ul>
+        </div>
+        <button type="button" class="rules_button">?</button>
+        <div class="rules_holder">
+            <span class="close_rules">x</span>
+            <p class="rules_title">Phase 1: Moving pieces</p>
+            <p class="rules_text">Move one's piece to a neighboring (horizontally, vertically, or diagonally) position that contains a square but not the opponent's piece.</p>
+            <p class="rules_title">Phase 2: Removing square</p>
+            <p class="rules_text">Players then remove the unoccupied place on which player's piece was before moving it.</p>
+            <p class="rules_title">Phase 3: Ending</p>
+            <p class="rules_text">The player who can not make any move loses the game.</p>
+        </div>
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/isola.js"></script>
+        <script src="../assets/js/messages.js"></script>
+    </body>
+</html>
